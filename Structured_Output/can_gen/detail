@@ -1,0 +1,8 @@
+The llm which can generate structured output they generally have with_structured_output function 
+in this me see 3 methods to generate structured output by usnig with_structured_output:
+-> TypedDict: This method allows you to define a structured output using a dictionary with specific types for each key. It ensures that the output adheres to the defined structure and types.
+-> Pydantic: This method uses Pydantic models to define structured output. Pydantic provides data validation and settings management using Python type annotations, ensuring that the output is not only structured but also validated against the defined model.
+-> JSON Schema: This method uses JSON Schema to define the structure of the output. It allows you to specify the expected format, types, and constraints of the output data, ensuring that it adheres to a predefined schema.
+
+additionally, you can also use:
+-> Custom Class: This method allows you to define a custom class for structured output. You can define attributes and methods within the class, providing a flexible way to structure the output according to your requirements.
