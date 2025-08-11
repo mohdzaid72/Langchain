@@ -3,20 +3,6 @@
 This repository documents my learning journey with **LangChain**, a powerful framework for building applications powered by Large Language Models (LLMs).  
 It includes hands-on examples, notes, and mini-projects covering core LangChain concepts and integrations.
 
----
-
-## 📌 Table of Contents
-- [About LangChain](#about-langchain)
-- [Learning Goals](#learning-goals)
-- [Topics Covered](#topics-covered)
-- [Folder Structure](#folder-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Resources](#resources)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## 📖 About LangChain
 [LangChain](https://www.langchain.com/) is an open-source framework that makes it easier to develop applications using LLMs.  
