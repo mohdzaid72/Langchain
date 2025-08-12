@@ -30,7 +30,7 @@ temp1=PromptTemplate(
     partial_variables={'format_instruction':parser2.get_format_instructions()}
 )
 
-classifier_chain= temp1|model|parser2  #tell semtiment positive h ya negative
+classifier_chain= temp1|model|parser2  #tell's semtiment positive h ya negative
 
 temp2=PromptTemplate(
     template='Write an appropriate response to this positive feedback \n {review}',
