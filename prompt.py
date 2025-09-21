@@ -29,8 +29,7 @@ Ensure the summary is clear, accurate, and aligned with the provided style and l
  validate_template=True   
 )
 #filling the placeholders with user inputs
-querry=temp.format
-(   #if when we are working with langchain closed source models, we need to use format instead of invoke. both have different syntax
+querry=temp.format(   #if when we are working with langchain closed source models, we need to use format instead of invoke. both have different syntax
     paper_input=paper_input,
     style_input=style_input,
     length_input=length_input
