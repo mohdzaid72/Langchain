@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; width: 340px; height: 500px; margin:0; }
+#app { display:flex; flex-direction:column; height:100%; }
+.header { padding:10px; font-weight:bold; border-bottom:1px solid #ddd; }
+.chat { flex:1; padding:8px; overflow-y:auto; background:#fafafa; }
+.msg { margin:6px 0; }
+.msg.user { text-align:right; }
+.msg .bubble { display:inline-block; padding:6px 10px; border-radius:10px; max-width:80%; }
+.msg.user .bubble { background:#4b9cff; color:#fff; }
+.msg.bot .bubble { background:#e5e5e5; color:#111; }
+.composer { display:flex; padding:6px; border-top:1px solid #ddd; }
+.composer input { flex:1; padding:6px; border-radius:6px; border:1px solid #ccc; }
+.composer button { margin-left:6px; padding:6px 10px; border-radius:6px; }

@@ -1,0 +1,31 @@
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+from langchain.output_parsers import StructuredOutputParser,ResponseSchema
+from dotenv import load_dotenv
+from langchain_core.prompts import PromptTemplate
+
+load_dotenv()
+
+
+
+llm=HuggingFaceEndpoint(
+       repo_id="meta-llama/Llama-3.1-8B-Instruct",
+        task="text-generation"
+)
+model=ChatHuggingFace(llm=llm)
+
+schema=[
+    ResponseSchema(name='face_1',description='fact one about the schema'),
+    ResponseSchema(name='face_2',description='fact two about the schema'),
+    ResponseSchema(name='face_3',description='fact three about the schema')
+]
+parser=StructuredOutputParser.from_response_schemas(schema)
+
+tem=PromptTemplate(
+    template="write 3 facts about the {topic}\n {formate_instruction}",
+    input_variables=['topic'],
+    partial_variables={"formate_instruction": parser.get_format_instructions()}
+)
+prompt=tem.invoke({'topic':'black hole'})
+unparsed_result=model.invoke(prompt)
+parsed_result=parser.parse(unparsed_result.content)
+print(parsed_result)

@@ -1,0 +1,4 @@
+All code in this folder work with all types of llms(open source and closed source) to give structure to them
+ we cover:
+ -> StrOutputParser 
+ -> JsonOutputParser
