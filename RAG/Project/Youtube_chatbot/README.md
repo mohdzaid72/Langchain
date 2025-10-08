@@ -127,7 +127,11 @@ faiss-cpu
 chromadb
 python-dotenv
 ```
+## 🧑‍💻 Author
 
+**Mohd Zaid**  
+📧 mohdzaidonly@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/mohd-zaid-5b6452233/) | 🔗 [GitHub](https://github.com/mohdzaid72)  
 ---
 
 ## 🔮 Future Enhancements
