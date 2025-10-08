@@ -139,15 +139,6 @@ python-dotenv
 
 ---
 
-## 🧑‍💻 Author
-
-**Ayaan Turk**  
-📧 mohdzaidonly@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile)  
-🔗 [GitHub](https://github.com/your-username)
-
----
-
 ## 📜 License
 
 Licensed under the **MIT License** – feel free to use, modify, and share.
